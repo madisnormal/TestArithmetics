@@ -17,4 +17,9 @@ public class TestOperations {
         double result = calc.divideTwoNumbers(6, 3);
         Assert.assertEquals(2, result, 0.0);
     }
+    @Test
+    public void multiplicationTest(){
+        double result = calc.multiplyTwoNumbers(2, 5);
+        Assert.assertEquals(10, result, 0.0);
+    }
 }
