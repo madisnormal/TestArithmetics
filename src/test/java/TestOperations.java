@@ -12,4 +12,9 @@ public class TestOperations {
         double result = calc.substractTwoNumbers(9, 8);
         Assert.assertEquals(1, result, 0.0);
     }
+    @Test
+    public void divisionTest(){
+        double result = calc.divideTwoNumbers(6, 3);
+        Assert.assertEquals(2, result, 0.0);
+    }
 }
