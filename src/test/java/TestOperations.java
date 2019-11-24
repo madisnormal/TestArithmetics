@@ -2,6 +2,7 @@ import org.junit.*;
 
 public class TestOperations {
     private static Calculate calc = new Calculate();
+
     @Test
     public void additionTest(){
         double result = calc.addTwoNumbers(5,4);
@@ -21,5 +22,9 @@ public class TestOperations {
     public void multiplicationTest(){
         double result = calc.multiplyTwoNumbers(2, 5);
         Assert.assertEquals(10, result, 0.0);
+    }
+    @Test(expected = ArithmeticException.class)
+    public void zeroInDenominator(){
+        calc.divideTwoNumbers(5, 0);
     }
 }
